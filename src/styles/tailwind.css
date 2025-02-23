@@ -1,0 +1,28 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Add any custom styles or configurations here */
+
+@font-face {
+  font-family: 'Nolan Light';
+  font-style: Normal;
+  font-display: swap;
+  font-weight: 300;
+  src: url('./fonts/Nolan-Next-Book.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nolan Regular';
+  font-style: Normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url('./fonts/Nolan-Next-Regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Nolan Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/Nolan-Next-Bold.otf') format('opentype');
+}

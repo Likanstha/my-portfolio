@@ -1,0 +1,56 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Nolan Regular", "Nolan Light", "Nolan Bold", sans-serif;
+  background-color: bg-gray-900;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --fontMain: #48aae1;
+  --backgroundMain: #ffffff;
+  --white: #ffffff;
+  --darkGrey: #55575c;
+  --lightGrey: #c4c4c4;
+  --gradient-black-white: linear-gradient(180deg, black 50%, white 50%);
+}
+
+#__next {
+  height: 100%;
+  width: 100%;
+}
+
+.number-input::-webkit-outer-spin-button,
+.number-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.number-input {
+  -moz-appearance: textfield;
+}
+
+.font-bold {
+  font-family: "Nolan Bold", sans-serif;
+}
+
+.font-light {
+  font-family: "Nolan Light", sans-serif;
+}
+
+.font-semibold {
+  font-family: "Nolan Bold", sans-serif;
+}
+
+.font-extra {
+  font-family: "Nolan Bold", sans-serif;
+}
