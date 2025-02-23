@@ -1,17 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { useCallback } from "react";
 import { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim"; // If you're using slim mode for a smaller bundle size
 import homeParticleConfig from "./Particle/homeParticleConfig";
-import contactParticleConfig from "./Particle/contactParticleConfig";
-import aboutParticleConfig from "./Particle/aboutParticleConfig";
 
 interface ParticlesBackgroundProps {
-  config?:
-    | typeof homeParticleConfig
-    | typeof contactParticleConfig
-    | typeof aboutParticleConfig;
+  config?: any;
 }
 
 const ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({

@@ -8,10 +8,11 @@ function GetInTouch() {
         <p className="text-lg leading-relaxed">
           <strong>Hey there, awesome human! 👋</strong>
           <br />
-          So glad you stopped by! Whether it's a cool idea, an exciting project,
-          or just a curious thought, I’d love to hear from you. 🚀 Drop me a
-          message through the Contact Form or hit me up on social media—whatever
-          feels right for you. Let’s make something amazing together! ✨
+          So glad you stopped by! Whether it&apos;s a cool idea, an exciting
+          project, or just a curious thought, I&rsquo;d love to hear from you.
+          🚀 Drop me a message through the Contact Form or hit me up on social
+          media—whatever feels right for you. Let&rsquo;s make something amazing
+          together! ✨
         </p>
       </div>
     </div>

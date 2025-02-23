@@ -1,16 +1,29 @@
-import { IOptions } from "tsparticles-engine";
-
-const aboutParticleConfig: IOptions = {
+const aboutParticleConfig = {
   particles: {
     number: {
       value: 250,
       density: {
         enable: true,
         value_area: 800,
+        area: 1, // Example value
+        factor: 1, // Example value
+        height: 1, // Example value
+        width: 1, // Example value
       },
+      limit: 0,
+      max: 0,
     },
     color: {
       value: "#fff",
+      animation: {
+        enable: true,
+        speed: 10,
+        sync: false,
+        offset: 1,
+        count: 0, // You can adjust this value (e.g., 0 or another number based on your requirement)
+        decay: 0, // Adjust as necessary (0 for no decay)
+        delay: 0, // Adjust the delay if needed (0 means no delay)
+      },
     },
     shape: {
       type: "circle",
@@ -30,6 +43,12 @@ const aboutParticleConfig: IOptions = {
         speed: 1,
         opacity_min: 0.1,
         sync: false,
+        destroy: "none",
+        mode: "random",
+        startValue: "max",
+        count: 0,
+        decay: 0,
+        delay: 0,
       },
     },
     size: {
@@ -40,6 +59,12 @@ const aboutParticleConfig: IOptions = {
         speed: 10,
         size_min: 0.1,
         sync: false,
+        destroy: "none",
+        mode: "random",
+        startValue: "max",
+        count: 0,
+        decay: 0,
+        delay: 0,
       },
     },
     line_linked: {
@@ -61,6 +86,8 @@ const aboutParticleConfig: IOptions = {
         enable: false,
         rotateX: 600,
         rotateY: 1200,
+        distance: 0,
+        rotate: undefined,
       },
     },
   },
@@ -70,6 +97,7 @@ const aboutParticleConfig: IOptions = {
       onhover: {
         enable: true,
         mode: "bubble",
+        parallax: undefined,
       },
       onclick: {
         enable: true,

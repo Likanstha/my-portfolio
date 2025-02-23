@@ -1,9 +1,7 @@
-import { IOptions } from "tsparticles-engine";
-
-const contactParticleConfig: IOptions = {
+const homeParticlesConfig = {
   particles: {
     number: {
-      value: 160,
+      value: 80, // Reduced the number of particles
       density: {
         enable: true,
         value_area: 800,
@@ -15,7 +13,7 @@ const contactParticleConfig: IOptions = {
     shape: {
       type: "circle",
       stroke: {
-        width: 0,
+        width: 3,
         color: "#000000",
       },
       polygon: {
@@ -28,27 +26,27 @@ const contactParticleConfig: IOptions = {
       },
     },
     opacity: {
-      value: 1,
+      value: 0.5,
       random: true,
       anim: {
-        enable: true,
+        enable: false,
         speed: 1,
-        opacity_min: 0,
+        opacity_min: 0.1,
         sync: false,
       },
     },
     size: {
-      value: 3,
+      value: 4,
       random: true,
       anim: {
         enable: false,
-        speed: 4,
-        size_min: 0.3,
+        speed: 40,
+        size_min: 0.1,
         sync: false,
       },
     },
     line_linked: {
-      enable: false,
+      enable: true,
       distance: 150,
       color: "#ffffff",
       opacity: 0.4,
@@ -56,48 +54,48 @@ const contactParticleConfig: IOptions = {
     },
     move: {
       enable: true,
-      speed: 1,
+      speed: 1, // Reduced the speed to slow down the movement
       direction: "none",
-      random: true,
+      random: false,
       straight: false,
       out_mode: "out",
-      bounce: false,
+      bounce: true,
       attract: {
         enable: false,
         rotateX: 600,
-        rotateY: 600,
+        rotateY: 1200,
       },
     },
   },
   interactivity: {
-    detect_on: "window",
+    detect_on: "canvas", // Fixed to a correct value, can also use "window"
     events: {
       onhover: {
         enable: true,
-        mode: "bubble",
+        mode: "grab",
       },
       onclick: {
         enable: true,
-        mode: "repulse",
+        mode: "push",
       },
       resize: true,
     },
     modes: {
       grab: {
-        distance: 400,
+        distance: 150,
         line_linked: {
           opacity: 1,
         },
       },
       bubble: {
-        distance: 250,
-        size: 0,
+        distance: 400,
+        size: 40,
         duration: 2,
-        opacity: 0,
+        opacity: 8,
         speed: 3,
       },
       repulse: {
-        distance: 400,
+        distance: 200,
         duration: 0.4,
       },
       push: {
@@ -111,4 +109,4 @@ const contactParticleConfig: IOptions = {
   retina_detect: true,
 };
 
-export default contactParticleConfig;
+export default homeParticlesConfig;
