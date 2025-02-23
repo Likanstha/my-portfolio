@@ -5,25 +5,13 @@ const aboutParticleConfig = {
       density: {
         enable: true,
         value_area: 800,
-        area: 1, // Example value
-        factor: 1, // Example value
-        height: 1, // Example value
-        width: 1, // Example value
       },
       limit: 0,
       max: 0,
     },
     color: {
       value: "#fff",
-      animation: {
-        enable: true,
-        speed: 10,
-        sync: false,
-        offset: 1,
-        count: 0, // You can adjust this value (e.g., 0 or another number based on your requirement)
-        decay: 0, // Adjust as necessary (0 for no decay)
-        delay: 0, // Adjust the delay if needed (0 means no delay)
-      },
+      animation: undefined,
     },
     shape: {
       type: "circle",

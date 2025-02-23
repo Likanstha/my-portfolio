@@ -4,7 +4,7 @@ import React from "react";
 
 const ResumePage = () => {
   return (
-    <div className="flex justify-cente m-auto w-1/2 mt-20 h-[20%]">
+    <div className="flex justify-center m-auto w-1/2 mt-20 h-[20%]">
       <ParticlesBackground config={aboutParticleConfig} />
       <iframe
         src="/pdf/resume.pdf"
