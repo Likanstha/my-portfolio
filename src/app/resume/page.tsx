@@ -4,15 +4,20 @@ import React from "react";
 
 const ResumePage = () => {
   return (
-    <div className="flex justify-center m-auto w-1/2 mt-20 h-[20%]">
+    <div className="relative min-h-screen bg-gray-900 text-white">
       <ParticlesBackground config={aboutParticleConfig} />
-      <iframe
-        src="/pdf/resume.pdf"
-        width="100%"
-        height="800px"
-        className="border-none"
-        title="Resume"
-      ></iframe>
+
+      <div className="flex justify-center items-center min-h-screen p-4 mt-5 lg:mt-20">
+        <div className="w-full max-w-4xl">
+          <iframe
+            src="/pdf/resume.pdf"
+            width="100%"
+            height="800px"
+            className="border-none rounded-lg shadow-lg"
+            title="Resume"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 };

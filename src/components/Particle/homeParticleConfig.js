@@ -68,7 +68,7 @@ const homeParticlesConfig = {
     },
   },
   interactivity: {
-    detect_on: "canvas", // Fixed to a correct value, can also use "window"
+    detect_on: "window", // Fixed to a correct value, can also use "window"
     events: {
       onhover: {
         enable: true,
