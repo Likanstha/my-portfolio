@@ -31,7 +31,7 @@ const ParticlesBackground: React.FC<ParticlesBackgroundProps> = ({
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
-      options={config} // Use the dynamic config
+      options={config}
     />
   );
 };
