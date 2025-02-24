@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-8 bg-white rounded-xl shadow-lg dark:bg-gray-800">
+    <div className="max-w-3xl mx-auto p-8 rounded-xl shadow-lg dark:bg-gray-800">
       <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">
         Contact Me
       </h2>
