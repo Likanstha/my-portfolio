@@ -33,52 +33,46 @@ export default function ContactForm() {
   };
 
   return (
-    <div className="max-w-3xl mx-auto p-8 rounded-xl shadow-lg dark:bg-gray-800">
-      <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-6">
+    <div className="max-w-3xl mx-auto p-8 rounded-xl shadow-lg dark:bg-gray-800 dark:text-white">
+      <h2 className="text-3xl font-bold text-center text-white mb-6">
         Contact Me
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-gray-700 dark:text-gray-300">
-            Subject
-          </label>
+          <label className="block text-gray-300">Subject</label>
           <input
             type="text"
             name="subject"
             value={formData.subject}
             onChange={handleChange}
             required
-            className="w-full mt-2 p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white"
+            className="w-full mt-2 p-3 border rounded-lg bg-gray-700 dark:text-white"
             placeholder="Your Subject"
           />
         </div>
 
         <div>
-          <label className="block text-gray-700 dark:text-gray-300">
-            Email
-          </label>
+          <label className="block text-gray-300">Email</label>
           <input
             type="email"
             name="email"
             value={formData.email}
             onChange={handleChange}
             required
-            className="w-full mt-2 p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white"
+            className="w-full mt-2 p-3 border rounded-lg bg-gray-700 dark:text-white"
             placeholder="Your Email"
           />
         </div>
 
         <div>
-          <label className="block text-gray-700 dark:text-gray-300">
-            Message
-          </label>
+          <label className="block text-gray-300">Message</label>
           <textarea
             name="message"
             value={formData.message}
             onChange={handleChange}
             required
             rows={5}
-            className="w-full mt-2 p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white"
+            className="w-full mt-2 p-3 border rounded-lg bg-gray-700 dark:text-white"
             placeholder="Write your message here..."
           ></textarea>
         </div>
