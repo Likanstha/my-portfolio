@@ -1,3 +1,4 @@
+import AboutMe from "@/components/AboutMe/AboutMe";
 import Expertise from "@/components/Expertise/Expertise";
 import contactParticleConfig from "@/components/Particle/contactParticleConfig";
 import ParticlesBackground from "@/components/ParticleBackground";
@@ -9,6 +10,7 @@ const About: React.FC = () => {
     <div className="relative min-h-screen bg-gray-900 text-white">
       <ParticlesBackground config={contactParticleConfig} />
       <div className="flex  flex-col mt-20">
+        <AboutMe />
         <Expertise />
         <Timeline />
       </div>

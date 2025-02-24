@@ -9,7 +9,7 @@ const Contact: React.FC = () => {
   return (
     <div className="relative min-h-screen bg-gray-900 text-white">
       <ParticlesBackground config={contactParticleConfig} />
-      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 gap-10">
+      <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-4 gap-10 mt-8">
         {/* Contact Form Section */}
         <div className="w-full md:w-1/2 mx-auto">
           <ContactForm />

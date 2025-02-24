@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
-    name: "",
+    subject: "",
     email: "",
     message: "",
   });
@@ -18,8 +18,18 @@ export default function ContactForm() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    alert(`Message Sent by ${formData.name}`);
-    setFormData({ name: "", email: "", message: "" });
+
+    // Prepare the subject and body of the email
+    const subject = `Contact Form Submission Subject: ${formData.subject}`;
+    const body = `${formData.message}`;
+
+    // Open the user's default email client with pre-filled data
+    window.location.href = `mailto:likan.stha@gmail.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    // Reset form after submission
+    setFormData({ subject: "", email: "", message: "" });
   };
 
   return (
@@ -29,15 +39,17 @@ export default function ContactForm() {
       </h2>
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-gray-700 dark:text-gray-300">Name</label>
+          <label className="block text-gray-700 dark:text-gray-300">
+            Subject
+          </label>
           <input
             type="text"
-            name="name"
-            value={formData.name}
+            name="subject"
+            value={formData.subject}
             onChange={handleChange}
             required
             className="w-full mt-2 p-3 border rounded-lg bg-gray-100 dark:bg-gray-700 dark:text-white"
-            placeholder="Your Name"
+            placeholder="Your Subject"
           />
         </div>
 
