@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import likan from "../../asset/img/likan.png";
 import Image from "next/image";
@@ -9,11 +8,11 @@ const AboutMe = () => {
       {/* Text Section */}
       <div className="space-y-4 text-lg text-white w-full md:w-[60%]">
         <h1 className="text-3xl font-bold text-white">
-          Hi, I'm <strong className="text-yellow-500">Likan Shrestha</strong>!
-          👋
+          Hi, I&apos;m{" "}
+          <strong className="text-yellow-500">Likan Shrestha</strong>! 👋
         </h1>
         <p>
-          I'm a passionate Full Stack Developer 💻 with over four years of
+          I&apos;m a passionate Full Stack Developer 💻 with over four years of
           experience in building dynamic, scalable web applications. I
           specialize in modern technologies like
           <span className="font-semibold text-blue-500">
@@ -25,15 +24,16 @@ const AboutMe = () => {
         <p>
           I love turning complex problems into simple, efficient solutions 🔧
           while continuously exploring new technologies to enhance my skill set
-          🔍. Whether it's developing user-friendly web applications, optimizing
-          backend systems, or streamlining workflows with cloud services, I
-          enjoy creating impactful software that drives results 🚀.
+          🔍. Whether it&apos;s developing user-friendly web applications,
+          optimizing backend systems, or streamlining workflows with cloud
+          services, I enjoy creating impactful software that drives results 🚀.
         </p>
         <p>
-          When I'm not coding, you'll find me learning about emerging tech
-          trends 🌱, working on personal projects 🛠️, or collaborating with
-          others to bring creative ideas to life 💡. I'm always excited to take
-          on new challenges and contribute to projects that make a difference!
+          When I&apos;m not coding, you&apos;ll find me learning about emerging
+          tech trends 🌱, working on personal projects 🛠️, or collaborating with
+          others to bring creative ideas to life 💡. I&apos;m always excited to
+          take on new challenges and contribute to projects that make a
+          difference!
         </p>
       </div>
 
